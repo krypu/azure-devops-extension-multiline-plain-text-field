@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Multiline Plain Text Field</title>
+</head>
+
+<body>
+    <script src="lib/VSS.SDK.min.js"></script>
+	
+    <script>
+		// Initialize the ADO integration
+        VSS.init({
+            explicitNotifyLoaded: true,
+			usePlatformScripts: true,
+            applyTheme: true
+        });
+	</script>
+	
+	<script src="multilinePlainTextFieldControl.js"></script>
+    
+    <textarea id="multilinePlainTextField" name="Multiline Plain Text Field" style="width: 100%; height: auto;"></textarea>
+</body>
+</html>

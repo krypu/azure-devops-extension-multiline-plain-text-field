@@ -1,0 +1,125 @@
+{
+    "manifestVersion": 1,
+    "id": "multiline-plain-text-field",
+    "publisher": "krypu",
+    "version": "1.0.0",
+    "name": "Multiline Plain Text Field",
+    "description": "A work item custom control for having a simple multiline plain text field.",
+    "public": true,
+    "categories": ["Azure Boards"],
+    "icons": {
+        "default": "images/logo.png"
+    },
+    "content": {
+        "details": {
+            "path": "README.md"
+        }
+    },
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "tags": [
+        "Work Item",
+        "Work Item control",
+        "Plain text",
+        "Text",
+        "Multiline"
+    ],
+	"scopes": [
+        "vso.work_write"
+	],
+    "repository": {
+        "type": "git",
+        "uri": "https://github.com/krypu/azure-devops-extension-multiline-plain-text-field"
+    },
+    "links": {
+        "repository": {
+            "uri": "https://github.com/krypu/azure-devops-extension-multiline-plain-text-field"
+        },
+        "issues": {
+            "uri": "https://github.com/krypu/azure-devops-extension-multiline-plain-text-field/issues"
+        },
+        "license": {
+            "uri": "https://github.com/krypu/azure-devops-extension-multiline-plain-text-field/blob/main/LICENSE.txt"
+        }
+    },
+    "screenshots": [
+        {
+            "path": "images/screenshot-1.png"
+        },
+        {
+            "path": "images/screenshot-2.png"
+        },
+        {
+            "path": "images/screenshot-3.png"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "multiline-plain-text-field",
+            "type": "ms.vss-work-web.work-item-form-control",
+			"description": "A work item custom control for having a customizable multiline plain text field.",
+            "targets": [
+                "ms.vss-work-web.work-item-form"
+            ],
+            "properties": {
+                "name": "Multiline Plain Text Field",
+                "description": "A work item custom control for having a customizable multiline plain text field.",
+                "uri": "index.html",
+                "inputs": [
+                    {
+                        "id": "Field",
+                        "name": "Field",
+                        "description": "Select a field for reading and saving value.",
+                        "type": "WorkitemField",
+                        "properties": {
+                            "workItemFieldTypes": ["String", "PlainText", "HTML"]
+                        },
+                        "validation": {
+                            "dataType": "String",
+                            "isRequired": true
+                        }
+                    },
+                    {
+                        "id": "Rows",
+                        "name": "Rows",
+                        "description": "Define the size of a custom text box, by providing height (number of rows).",
+                        "validation": {
+                            "dataType": "Number",
+                            "isRequired": true
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "files": [
+        {
+            "path": "index.html",
+            "addressable": true
+        },
+        {
+            "path": "multilinePlainTextFieldControl.js",
+            "addressable": true
+        },
+        {
+            "path": "images/logo.png",
+            "addressable": true
+        },
+        {
+            "path": "README.md",
+            "addressable": true
+        },
+        {
+            "path": "LICENSE.txt",
+            "addressable": true
+        },
+        {
+            "path": "node_modules/vss-web-extension-sdk/lib",
+            "addressable": true,
+            "packagePath": "lib"
+        }
+    ]
+}

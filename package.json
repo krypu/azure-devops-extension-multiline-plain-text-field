@@ -1,0 +1,15 @@
+{
+  "name": "azure-devops-extension-multiline-plain-text-field",
+  "version": "1.0.0",
+  "description": "This custom control allows you to add a simple multiline plain text field.",
+  "main": "multilinePlainTextFieldControl.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Krystian Puchalski",
+  "license": "EUPL-1.2",
+  "dependencies": {
+    "vss-web-extension-sdk": "^5.141.0"
+  }
+}
